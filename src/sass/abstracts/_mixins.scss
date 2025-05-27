@@ -1,0 +1,59 @@
+@mixin breakpoint($bp) {
+
+  @if $bp==mobil {
+    @media (min-width:$bp_mobil){
+      @content;
+    }
+  }
+
+  @if $bp==tablet {
+    @media (min-width:$bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp==desktop {
+    @media (min-width:$bp-desktop){
+      @content;
+    }
+  }
+
+  @if $bp==desktopxl {
+    @media (min-width:$bp-desktop-xl){
+      @content;
+    }
+  }
+}
+
+
+//Headings
+@mixin heading($size){
+  font-weight: 700;
+  font-family: $font-primary;
+  @if $size==XL{
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -2.5px;
+  }
+  @if $size==L{
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -1.5px;
+  }
+  @if $size==M{
+
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+
+  }
+}
+
+//Text
+@mixin body{
+  font-family: $font-primary;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+}

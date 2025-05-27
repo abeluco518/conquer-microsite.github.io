@@ -1,0 +1,12 @@
+.footer{
+    padding:  20px 100px;
+    background-color: $color-footer;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+
+    p{
+        color:white;
+        @include body;
+    }
+}

@@ -1,0 +1,31 @@
+.page-noticia{
+    .title{
+            @include heading(L);
+            white-space: normal;
+            margin-bottom: 50px;
+            text-align: center;
+    }
+    .noticia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        
+        &__subtitle{
+            @include heading(M);
+            align-self: flex-start;
+        }
+        &__text{
+            @include body;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.page-legal{
+    div.legal{
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    h1{
+        @include heading(M);
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    p,h4{
+        @include body;  
+    }
+
+}   

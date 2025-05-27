@@ -1,0 +1,54 @@
+.page-blog{
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title{
+            @include heading(XL);
+            margin-bottom: 30px;
+            text-transform : uppercase;
+        }
+        &__subtitle{
+            @include heading(L);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+    }
+    .articles{
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        justify-content: space-evenly;
+        height: fit-content;
+        position: relative;
+
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        h3{
+            @include heading(M);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        p{
+            @include body;
+            margin-bottom: 20px;
+        }
+        a{
+            margin-bottom: 50px;
+            align-self: center;
+            position: absolute;
+            bottom:-100px;
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            
+        }
+    }
+}

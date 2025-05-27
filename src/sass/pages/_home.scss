@@ -1,0 +1,186 @@
+.page-home{
+    .hero{
+        padding: 70px 120px 70px 120px;
+        display: flex;
+        justify-content: space-between;
+        background: #EAF77E;
+        background: linear-gradient(135deg, rgba(234, 247, 126, 1) 16%, rgba(189, 219, 174, 1) 55%, rgba(150, 193, 231, 1) 100%);
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+        }
+
+        &__title{
+            
+                @include heading(L);
+                white-space: normal;  
+        }
+        &__subtitle{
+            @include heading(M);
+            margin-top:30px;
+        }
+
+        &__text{
+            @include body;
+                margin-top: 30px;
+        }
+
+        &__figure{
+            margin-top: 60px;
+            width: 50%;
+            align-self: center;
+            figcaption{
+                display: none;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .quienes_somos{
+        padding: 70px 120px 70px 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title{
+            @include heading(M);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__text{
+            @include body;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__button{
+            display:inline-block
+        }
+    }
+    .cursos{
+        padding: 70px 120px 70px 120px;
+        &__title{
+            @include heading(M);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        &__subtitle{
+            @include heading(S);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        &__cursos{
+            display: flex;
+            justify-content: space-around;
+            .article_content{
+                padding: 30px 20px;
+            }
+            article{
+                padding-bottom:20px;
+                position: relative;
+                width:300px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                a{
+                display: inline-block;
+                width: 100%;
+                text-decoration: none;
+                    img{
+                    width: 100%;
+                    height: auto;
+                    }
+                }
+                h3{
+                    @include heading(S);
+                    font-weight: 800;
+                    margin-bottom: 30px;
+                }
+                p{
+                    @include body;
+                    margin-top: 10px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+                li{@include body;
+                font-weight: 400;
+                margin-bottom: 10px;}
+                ul{
+                    margin: 0;
+                    padding-left:10px;
+                    list-style: none;
+                }
+            
+            }
+            .cursos__button {
+                display: inline-block;
+                margin-top: 30px;
+                width: 100%;
+                text-align: center;
+                color: white;
+                padding-top:10px;
+                padding-bottom:10px;
+                background-color: $color-footer;
+                position: absolute;
+                bottom:0;
+            }
+            
+        }
+    }
+    .news{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title{
+            @include heading(M);
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+        &__categories{
+            display: flex;
+            justify-content: center;
+            gap:200px;
+            article{
+                width: 300px;
+                
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                position: relative;
+
+                .article_content{
+                padding: 30px 20px;
+                }
+                
+                img{
+                    width: 100%;
+                    height: auto;
+                    }
+                
+                h3{
+                    @include heading(S);
+                    font-weight: 800;
+                    margin-bottom: 30px;
+                }
+                p{
+                    @include body;
+                    margin-top: 10px;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+            
+            
+                
+                
+                
+            }
+            
+        }
+        a.news__button{
+                display: inline-block;
+                margin-top: 60px;
+                
+            }
+    }
+}

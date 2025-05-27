@@ -1,0 +1,27 @@
+  html * {
+    font-family: $roboto-font;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: $font-primary;
+    font-style: normal;
+}
+ 
+body {
+    position:relative;
+    padding-bottom: 200px;
+}
+
+div.page{
+  max-width: 100%;
+  min-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 70px 0;
+}
+
+
+
+
+
+

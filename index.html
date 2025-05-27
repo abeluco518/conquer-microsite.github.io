@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Título para el navegador y los buscadores -->
+    <title>Portfolio</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Personal portfoliohome page conquer blocks" />
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="" />
+
+    <!-- Autor de la página -->
+    <meta name="author" content="Abel" />
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Codificación-->
+    <meta charset="UTF-8" />
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="page-home">
+    <header class="header">
+      <!-- Logo de la empresa --> 
+      <img class="header__logo" src="src/img/logo_conquer.png" alt="logotipo de conquer blocks">
+      <nav class="header__nav">
+        <!-- Lista de enlaces de navegación -->
+        <ol>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="quienes_somos.html">Quiénes somos</a></li>
+          <li><a href="#cursos">Cursos</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="registro.html">Registro</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ol>
+      </nav>
+    </header>
+    <div class="page">
+      <main>
+        <section class="hero">
+          <div class="hero__content">
+            <h1 class="hero__title">Transforma tu futuro profesional con la nueva escula lider en la enseñanza de nuevas tecnlógias profesionales</h1>
+            <h3 class="hero__subtitle">Escuela Online de Tecnologia</h3>
+            <p class="hero__text">Aprende habilidades que las empresas demandan hoy en día</p>
+          </div>
+          <figure class="hero__figure">
+            <figcaption>Panel de control de Conquer Blocks</figcaption>
+            <img src="src/img/panel_conquer.png" alt="panel de control de conquer blocks">
+          </figure>
+        </section>
+      </main>
+      <section class="quienes_somos">
+        <h2 class="quienes_somos__title">Descúbre quienes somos</h2>
+        <p class="quienes_somos__text">Con <em>Conquerblocks</em> te podrás formar en el apasionante mundo del <strong>Full-Stack</strong></p>
+        <a class="quienes_somos__button cta" href="HTML/quienes_somos.html">Conoce Conquer Blocks</a>
+      </section>
+      <section class="cursos" id="cursos">
+        <div class="cursos__header">
+          <h2 class="cursos__title">Últimos cursos</h2>
+          <p class="cursos__subtitle">Descubre los <strong>ultimos cursos</strong> que podrás encontrar en nuestra plataforma</p>
+        </div>
+        <div class="cursos__cursos">
+          <article>
+              <a href="curso1.html"><img src="src/img/curos_fullstack.png" alt="foto fullstack" width="419px" height="237px"></a>
+              <div class="article_content">
+                <h3>Master en desarrollo Web Full-Stack</h3>
+                <p><em>El mas vendido.</em> <strong>Consigue la profesion de tus sueños</strong></p>
+                <ul>
+                  <li>- No requiere Conocimientos previos</li>
+                  <li><strong>- Garantia de empleo</strong></li>
+                </ul>
+              </div>
+              <a href="curso1.html" class="cursos__button ">Ver más</a>
+          </article>
+          <article>
+              <a href="curso2.html"><img src="src/img/curso_crypto.png" alt="foto crypto" width="419px" height="237px"></a>
+              <div class="article_content">
+                <h3>Master en desarrollo blockchain</h3>
+                <p>Ideal para programadores que quieren <strong>crecer profesionalmente</strong></p>
+                <ul>
+                  <li>- Programa lider en el mercado</li>
+                  <li>- Requiere de conocimientos previos</li>
+                </ul>
+              </div>
+              <a href="curso2.html" class="cursos__button ">Ver más</a>
+          </article>
+        </div>
+        
+      </section>
+      <aside class="news">
+        <h2 class="news__title">Novedades y noticias</h2>
+        <div class="news__categories">
+          <article>
+                <img src="src/img/noticia1.png" alt="Foto noticia 1" width="419px" height="237px">
+                <div class="article_content">
+                  <h3>Desarrollo Full-Stack para perfiles Junior</h3>
+                  <p>En el dinámico mundo del <strong>desarrollo web</strong>, el rol de<br/>desarrollador <strong>Full Stack</strong> ha emergido como una carrera<br/>codiciada, ofreciendo la promesa de dominar tanto el<em>frontend como el backend.</em></p>
+                </div>
+          </article>
+          <article>
+                <img src="src/img/noticia2.png" alt="Foto noticia 2" width="419px" height="237px">
+                <div class="article_content">
+                  <h3>El Desarrollador Full Stack Marketer: Un Híbrido<br/>Innovador en la Era Digital</h3>
+                  <p>En el vertiginoso mundo del <strong>desarrollo web y el marketing digital</strong>,<br/>emerge una figura revolucionaria: <strong>desarrollador Full StackMarketer.</strong> Este híbrido entre desarrollador y</p>
+                </div>
+          </article>
+        </div>
+        <a href="./blog.html" class="news__button cta">Decubre más noticias</a>
+      </aside>
+    </div>
+    <footer class="footer">
+      <p>© Copyright all rights reserveds 2020-2025 - <a href="aviso_legal.html">Aviso legal</a></p>
+    </footer>
+ 
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
